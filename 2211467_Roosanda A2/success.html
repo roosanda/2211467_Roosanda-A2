@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Success</title>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Login Success</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div class="header">
+            <h1>Login Success</h1>
+            <a href="index.html" class="logout-btn">Logout</a>
+        </div>
+        <div class="container">
+            <div class="user-info-box">
+                <div class="profile-img">
+                    <img src="img/avatar.svg" alt="Profile Image">
+                    
+                </div>
+            <div class="user-info-box">
+                <p>Welcome</p><h2> <span id="username"></span></h2>
+                <p>Email: <span id="email"></span></p>
+               <a href="Singup.html"><button class="button">Create a user</button></a> 
+            </div>
+        </div>
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+    </html>
+
+  <script>
+    // Retrieve the stored username and email and display them on the page
+    var username = localStorage.getItem("username");
+    var email = localStorage.getItem("email");
+
+
+    document.getElementById("username").innerHTML = username;
+    document.getElementById("email").innerHTML = email;
+ 
+
+
+  </script>
+</body>
+</html>
